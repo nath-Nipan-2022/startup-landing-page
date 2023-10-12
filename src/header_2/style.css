@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.container {
+  padding: 1rem;
+
+  width: min(100%, 1440px);
+  margin: 0 auto;
+}
+
+/* style start */
+:root {
+  --accent-color: rgba(72, 43, 231, 1);
+  --accent-hover-color: rgb(88, 63, 231);
+}
+body {
+  background-color: rgb(47, 24, 147);
+  color: #fff;
+  font-family: "Dm sans", sans-serif;
+  font-weight: 500;
+}
+
+header .container {
+  padding-top: 60px;
+  width: 1159px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+
+.account-links {
+  font-size: 18px;
+  gap: 2rem;
+}
+
+.btn-primary {
+  padding: 8.5px 20px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover-color);
+}
+.btn-secondary {
+  padding: 6px 16px;
+  border-radius: 40px;
+  transition: 0.3s;
+  background-color: rgba(37, 218, 197, 1);
+  color: #fff;
+  width: 120px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+main {
+  padding-block: 89px;
+}
+.hero {
+  text-align: center;
+}
+.text {
+  margin-bottom: 74px;
+}
+.hero .text h1 {
+  font-size: 72px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  line-height: 86px;
+
+  max-width: 770px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+.hero .text p {
+  max-width: 607px;
+  font-size: 22px;
+  margin: auto;
+}
+
+.hero .sign-up-form {
+  gap: 10px;
+  justify-content: center;
+}
+.sign-up-form input {
+  width: 350px;
+  padding: 16px 20px;
+  font: inherit;
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+}
+.sign-up-form input:is(:hover, :focus) {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.sign-up-field p {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.3);
+}

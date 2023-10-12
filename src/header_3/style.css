@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.container {
+  padding: 1rem;
+
+  width: min(100%, 1170px);
+  margin: 0 auto;
+}
+
+/* style start */
+:root {
+  --text: rgba(30, 14, 98, 1);
+  --accent-color: rgb(37, 218, 197);
+  --accent-hover-color: rgb(26, 158, 142);
+}
+body {
+  font-family: "Dm sans", sans-serif;
+  font-weight: 500;
+}
+
+header .container {
+  padding-top: 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: var(--text);
+  font-weight: 600;
+}
+nav {
+  flex: 1;
+}
+.nav-links {
+  gap: 2rem;
+}
+
+.account-links li,
+.nav-links li {
+  font-size: 18px;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+.account-links {
+  gap: 2rem;
+}
+
+.btn-primary {
+  padding: 8.5px 18px;
+  border-radius: 70px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover-color);
+}
+.btn-secondary {
+  padding: 6px 16px;
+  border-radius: 40px;
+  transition: 0.3s;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+}
+.btn-secondary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+main {
+  padding-block: 110px;
+}
+.hero {
+  gap: 100px;
+}
+.text {
+  max-width: 600px;
+  margin-bottom: 52px;
+}
+.hero .text h1 {
+  font-size: 42px;
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+  line-height: 52px;
+
+  max-width: 490px;
+  margin-bottom: 25px;
+  color: var(--text);
+}
+
+.sign-up-form-container {
+  margin-top: 77px;
+  width: 470px;
+}
+
+.sign-up-form {
+  gap: 30px;
+}
+.sign-up-form input {
+  padding: 15.5px 20px;
+  font: inherit;
+  font-size: 18px;
+  color: rgba(21, 20, 57, 0.4);
+  border: 1px solid rgba(235, 234, 237, 1);
+  border-radius: 100px;
+}
+.sign-up-form input:is(:hover, :focus) {
+  border-color: rgb(202, 199, 209);
+}
+
+.sign-up-form .btn-primary {
+  font-size: 20px;
+  padding: 15px 34px;
+  text-align: center;
+  display: inline-block;
+}
+
+.sign-up-form + p {
+  color: rgba(21, 20, 57, 0.4);
+  text-align: center;
+  margin-top: 17px;
+}
+
+/* video */
+.hero-video {
+  flex-shrink: 0;
+  width: 470px;
+  position: relative;
+  margin-top: 14px;
+}
+.hero-video video {
+  width: 470px;
+  height: 265px;
+  border-radius: 10px;
+  background-color: #fdd;
+}
+.hero-video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.hero-video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  background: rgba(234, 50, 35);
+  color: white;
+  cursor: pointer;
+}
+.hero-video i:hover {
+  background: rgb(191, 38, 24);
+}
+
+.hero-video + p {
+  font-size: 18px;
+  color: rgba(21, 20, 57, 0.4);
+  margin-top: 2rem;
+  max-width: 350px;
+}
